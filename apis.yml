@@ -1,149 +1,63 @@
+aid: cisco-control-hub
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/cisco-control-hub/refs/heads/main/apis.yml
 name: Cisco Control Hub
-description: APIs for managing Cisco collaboration services including Webex, devices, users, and organizational settings
-image: https://www.cisco.com/c/en/us/products/collaboration-endpoints/index.html
 tags:
-- Collaboration
-- Webex
-- Device Management
-- Identity Management
-- Communications
-created: '2024'
-modified: '2024'
-url: https://developer.webex.com/docs/api/getting-started
-specificationVersion: '0.18'
+  - Collaboration
+  - Webex
+  - Device Management
+  - Identity Management
+  - Communications
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+created: '2024-01-01'
+modified: '2026-03-16'
+position: Consumer
+description: >-
+  APIs for managing Cisco collaboration services including Webex, devices,
+  users, and organizational settings via Control Hub.
 apis:
-- name: Webex Admin API
-  description: Manage users, licenses, and organizational settings for Webex
-  image: https://developer.webex.com/images/webex-logo.svg
-  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Administration
-  - Users
-  - Organizations
-  - Licenses
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/admin-audit-events
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
+  - aid: cisco-control-hub:webex-admin-api
+    name: Webex Admin API
+    tags:
+      - Administration
+      - Users
+      - Organizations
+    humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+    properties:
+      - url: https://developer.webex.com/docs/api/v1/admin-audit-events
+        type: Documentation
+      - url: https://developer.webex.com/docs/api/v1/openapi.json
+        type: OpenAPI
+    description: >-
+      Manage users, licenses, and organizational settings for Webex.
+  - aid: cisco-control-hub:webex-devices-api
+    name: Devices API
+    tags:
+      - Devices
+      - Room Systems
+    humanURL: https://developer.webex.com/docs/api/v1/devices
+    properties:
+      - url: https://developer.webex.com/docs/api/v1/devices
+        type: Documentation
+    description: >-
+      Manage Webex devices including room devices, desk devices, and phone
+      configurations.
+common:
+  - type: Portal
+    url: https://developer.webex.com
   - type: Authentication
     url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
-  contact:
-  - FN: Cisco Developer Support
-    email: devsupport@webex.com
+  - type: Status
+    url: https://status.webex.com
+  - type: Support
     url: https://developer.webex.com/support
-- name: Webex Calling API
-  description: Manage calling features, phone numbers, and voice settings
-  humanURL: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Calling
-  - Voice
-  - Telephony
-  - Phone Numbers
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-- name: Devices API
-  description: Manage Webex devices including room devices, desk devices, and phone configurations
-  humanURL: https://developer.webex.com/docs/api/v1/devices
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Devices
-  - Room Systems
-  - Endpoints
-  - Configuration
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/devices
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-- name: Workspaces API
-  description: Manage physical and virtual workspaces for collaboration
-  humanURL: https://developer.webex.com/docs/api/v1/workspaces
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Workspaces
-  - Locations
-  - Meeting Rooms
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/workspaces
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-- name: People API
-  description: Manage user profiles and directory information
-  humanURL: https://developer.webex.com/docs/api/v1/people
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Users
-  - People
-  - Directory
-  - Profiles
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/people
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-- name: Organizations API
-  description: Manage organization settings and configurations
-  humanURL: https://developer.webex.com/docs/api/v1/organizations
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Organizations
-  - Settings
-  - Configuration
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/organizations
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-- name: Licenses API
-  description: Manage and assign licenses for Webex services
-  humanURL: https://developer.webex.com/docs/api/v1/licenses
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Licenses
-  - Subscriptions
-  - Entitlements
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/licenses
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-- name: Reports API
-  description: Generate and access analytics and usage reports
-  humanURL: https://developer.webex.com/docs/api/v1/reports
-  baseURL: https://webexapis.com/v1
-  tags:
-  - Reports
-  - Analytics
-  - Usage
-  - Metrics
-  properties:
-  - type: Documentation
-    url: https://developer.webex.com/docs/api/v1/reports
-  - type: OpenAPI
-    url: https://developer.webex.com/docs/api/v1/openapi.json
-common:
-- type: Developer Portal
-  url: https://developer.webex.com
-- type: Authentication
-  url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
-- type: Rate Limits
-  url: https://developer.webex.com/docs/api-guidelines#rate-limiting
-- type: Status Page
-  url: https://status.webex.com
-- type: Support
-  url: https://developer.webex.com/support
-- type: Terms of Service
-  url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html
-- type: Privacy Policy
-  url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
+  - type: Terms of Service
+    url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html
+  - type: Privacy Policy
+    url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
 maintainers:
-- FN: Cisco Collaboration
-  email: developer@webex.com
-  url: https://developer.webex.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
+specificationVersion: '0.19'
