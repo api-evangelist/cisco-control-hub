@@ -4,10 +4,10 @@ url: >-
 name: Cisco Control Hub
 tags:
   - Collaboration
-  - Webex
+  - Communications
   - Device Management
   - Identity Management
-  - Communications
+  - Webex
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
@@ -22,8 +22,8 @@ apis:
     name: Webex Admin API
     tags:
       - Administration
-      - Users
       - Organizations
+      - Users
     humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
     properties:
       - url: https://developer.webex.com/docs/api/v1/admin-audit-events
