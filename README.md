@@ -169,7 +169,7 @@ Generate and download analytics and usage reports for Webex services.
 - [Terms of Service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html)
 - [Privacy Policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
 - [JSON-LD Context](json-ld/cisco-control-hub-context.jsonld)
-- [Spectral Ruleset](spectral/cisco-control-hub-spectral.yml)
+- [Spectral Ruleset](rules/cisco-control-hub-rules.yml)
 
 ## Maintainers
 

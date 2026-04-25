@@ -200,7 +200,7 @@ common:
   - type: JSON-LD
     url: json-ld/cisco-control-hub-context.jsonld
   - type: Spectral
-    url: spectral/cisco-control-hub-spectral.yml
+    url: rules/cisco-control-hub-rules.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
