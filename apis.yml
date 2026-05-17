@@ -183,21 +183,21 @@ common:
     url: https://admin.webex.com
   - type: Authentication
     url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
-  - type: Rate Limits
+  - type: RateLimits
     url: https://developer.webex.com/docs/api-guidelines#rate-limiting
-  - type: Status
+  - type: StatusPage
     url: https://status.webex.com
   - type: Support
     url: https://developer.webex.com/support
-  - type: Change Log
+  - type: ChangeLog
     url: https://developer.webex.com/changelog
-  - type: GitHub Organization
+  - type: GitHubOrganization
     url: https://github.com/WebexSamples
-  - type: Terms of Service
+  - type: TermsOfService
     url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html
-  - type: Privacy Policy
+  - type: PrivacyPolicy
     url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/cisco-control-hub-context.jsonld
   - type: Spectral
     url: rules/cisco-control-hub-rules.yml
