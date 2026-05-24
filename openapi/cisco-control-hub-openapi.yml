@@ -1,0 +1,408 @@
+openapi: 3.1.0
+info:
+  title: Cisco Webex Control Hub Admin API
+  description: |
+    Programmatic access to Cisco Webex Control Hub administration surfaces:
+    organizations, people, licenses, locations, workspaces, devices, and
+    admin audit events. Authentication uses OAuth 2.0 access tokens or
+    service-app tokens scoped to the organization.
+  version: "1.0.0"
+  contact:
+    name: Webex for Developers
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+servers:
+  - url: https://webexapis.com/v1
+security:
+  - bearerAuth: []
+tags:
+  - name: AdminAuditEvents
+  - name: Organizations
+  - name: People
+  - name: Licenses
+  - name: Locations
+  - name: Workspaces
+  - name: Devices
+paths:
+  /adminAuditEvents:
+    get:
+      tags: [AdminAuditEvents]
+      summary: List admin audit events for the organization
+      operationId: listAdminAuditEvents
+      parameters:
+        - in: query
+          name: orgId
+          required: true
+          schema: { type: string }
+        - in: query
+          name: from
+          required: true
+          schema: { type: string, format: date-time }
+        - in: query
+          name: to
+          required: true
+          schema: { type: string, format: date-time }
+        - in: query
+          name: actorId
+          schema: { type: string }
+        - in: query
+          name: max
+          schema: { type: integer }
+        - in: query
+          name: offset
+          schema: { type: integer }
+        - in: query
+          name: eventCategories
+          schema:
+            type: array
+            items: { type: string }
+        - in: query
+          name: eventCategoryOperationTypes
+          schema:
+            type: array
+            items: { type: string }
+      responses:
+        "200":
+          description: A list of admin audit events
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/AdminAuditEvent" }
+  /organizations:
+    get:
+      tags: [Organizations]
+      summary: List organizations
+      operationId: listOrganizations
+      parameters:
+        - in: query
+          name: max
+          schema: { type: integer }
+      responses:
+        "200":
+          description: A list of organizations
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/Organization" }
+  /organizations/{orgId}:
+    parameters:
+      - in: path
+        name: orgId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Organizations]
+      summary: Get organization details
+      operationId: getOrganization
+      responses:
+        "200":
+          description: An organization
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Organization" }
+    delete:
+      tags: [Organizations]
+      summary: Delete an organization
+      operationId: deleteOrganization
+      responses:
+        "204":
+          description: Deleted
+  /people:
+    get:
+      tags: [People]
+      summary: List people
+      operationId: listPeople
+      parameters:
+        - in: query
+          name: email
+          schema: { type: string, format: email }
+        - in: query
+          name: displayName
+          schema: { type: string }
+        - in: query
+          name: id
+          schema: { type: string }
+        - in: query
+          name: orgId
+          schema: { type: string }
+        - in: query
+          name: max
+          schema: { type: integer }
+        - in: query
+          name: showAllTypes
+          schema: { type: boolean }
+      responses:
+        "200":
+          description: A list of people
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items: { $ref: "#/components/schemas/Person" }
+    post:
+      tags: [People]
+      summary: Create a person
+      operationId: createPerson
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Person" }
+      responses:
+        "200":
+          description: Created person
+  /people/{personId}:
+    parameters:
+      - in: path
+        name: personId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [People]
+      summary: Get person details
+      operationId: getPerson
+      responses:
+        "200":
+          description: A person
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Person" }
+    put:
+      tags: [People]
+      summary: Update a person
+      operationId: updatePerson
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Person" }
+      responses:
+        "200":
+          description: Updated person
+    delete:
+      tags: [People]
+      summary: Delete a person
+      operationId: deletePerson
+      responses:
+        "204":
+          description: Deleted
+  /licenses:
+    get:
+      tags: [Licenses]
+      summary: List licenses
+      operationId: listLicenses
+      parameters:
+        - in: query
+          name: orgId
+          schema: { type: string }
+      responses:
+        "200":
+          description: A list of licenses
+  /licenses/{licenseId}:
+    parameters:
+      - in: path
+        name: licenseId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Licenses]
+      summary: Get license details
+      operationId: getLicense
+      responses:
+        "200":
+          description: A license
+  /locations:
+    get:
+      tags: [Locations]
+      summary: List locations
+      operationId: listLocations
+      parameters:
+        - in: query
+          name: name
+          schema: { type: string }
+        - in: query
+          name: orgId
+          schema: { type: string }
+        - in: query
+          name: max
+          schema: { type: integer }
+      responses:
+        "200":
+          description: A list of locations
+    post:
+      tags: [Locations]
+      summary: Create a location
+      operationId: createLocation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Location" }
+      responses:
+        "200":
+          description: Created location
+  /locations/{locationId}:
+    parameters:
+      - in: path
+        name: locationId
+        required: true
+        schema: { type: string }
+    get:
+      tags: [Locations]
+      summary: Get location details
+      operationId: getLocation
+      responses:
+        "200":
+          description: A location
+    put:
+      tags: [Locations]
+      summary: Update a location
+      operationId: updateLocation
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/Location" }
+      responses:
+        "200":
+          description: Updated location
+  /workspaces:
+    get:
+      tags: [Workspaces]
+      summary: List workspaces
+      operationId: listWorkspaces
+      parameters:
+        - in: query
+          name: orgId
+          schema: { type: string }
+        - in: query
+          name: locationId
+          schema: { type: string }
+        - in: query
+          name: max
+          schema: { type: integer }
+      responses:
+        "200":
+          description: A list of workspaces
+  /devices:
+    get:
+      tags: [Devices]
+      summary: List devices
+      operationId: listDevices
+      parameters:
+        - in: query
+          name: orgId
+          schema: { type: string }
+        - in: query
+          name: personId
+          schema: { type: string }
+        - in: query
+          name: workspaceId
+          schema: { type: string }
+        - in: query
+          name: max
+          schema: { type: integer }
+      responses:
+        "200":
+          description: A list of devices
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: OAuth2-Access-Token
+  schemas:
+    AdminAuditEvent:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            actorOrgId: { type: string }
+            targetName: { type: string }
+            eventDescription: { type: string }
+            actorName: { type: string }
+            actorEmail: { type: string, format: email }
+            adminRoles:
+              type: array
+              items: { type: string }
+            trackingId: { type: string }
+            targetType: { type: string }
+            targetId: { type: string }
+            eventCategory: { type: string }
+            actorUserAgent: { type: string }
+            actorIp: { type: string }
+            targetOrgId: { type: string }
+            actionText: { type: string }
+            targetOrgName: { type: string }
+        id: { type: string }
+        actorId: { type: string }
+        orgId: { type: string }
+        created: { type: string, format: date-time }
+        eventCategory: { type: string }
+    Organization:
+      type: object
+      properties:
+        id: { type: string }
+        displayName: { type: string }
+        created: { type: string, format: date-time }
+        xsiActionsEndpoint: { type: string, format: uri }
+        xsiEventsEndpoint: { type: string, format: uri }
+        xsiEventsChannelEndpoint: { type: string, format: uri }
+        bcBaseDomain: { type: string }
+    Person:
+      type: object
+      properties:
+        id: { type: string }
+        emails:
+          type: array
+          items: { type: string, format: email }
+        displayName: { type: string }
+        firstName: { type: string }
+        lastName: { type: string }
+        nickName: { type: string }
+        avatar: { type: string, format: uri }
+        orgId: { type: string }
+        roles:
+          type: array
+          items: { type: string }
+        licenses:
+          type: array
+          items: { type: string }
+        created: { type: string, format: date-time }
+        lastModified: { type: string, format: date-time }
+        timezone: { type: string }
+        lastActivity: { type: string, format: date-time }
+        status: { type: string }
+        type:
+          type: string
+          enum: [person, bot, appuser]
+        userName: { type: string }
+        loginEnabled: { type: boolean }
+    Location:
+      type: object
+      properties:
+        id: { type: string }
+        orgId: { type: string }
+        name: { type: string }
+        timeZone: { type: string }
+        preferredLanguage: { type: string }
+        address:
+          type: object
+          properties:
+            address1: { type: string }
+            address2: { type: string }
+            city: { type: string }
+            state: { type: string }
+            postalCode: { type: string }
+            country: { type: string }
