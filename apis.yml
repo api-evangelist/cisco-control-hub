@@ -206,6 +206,8 @@ maintainers:
     email: kin@apievangelist.com
 
 common:
+  - type: AgenticAccess
+    url: agentic-access/cisco-control-hub-agentic-access.yml
   - type: DomainSecurity
     url: security/cisco-control-hub-domain-security.yml
   - type: Authentication
