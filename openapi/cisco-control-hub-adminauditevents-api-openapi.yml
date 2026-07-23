@@ -1,0 +1,140 @@
+openapi: 3.1.0
+info:
+  title: Cisco Webex Control Hub Admin AdminAuditEvents API
+  description: 'Programmatic access to Cisco Webex Control Hub administration surfaces:
+
+    organizations, people, licenses, locations, workspaces, devices, and
+
+    admin audit events. Authentication uses OAuth 2.0 access tokens or
+
+    service-app tokens scoped to the organization.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Webex for Developers
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+servers:
+- url: https://webexapis.com/v1
+security:
+- bearerAuth: []
+tags:
+- name: AdminAuditEvents
+paths:
+  /adminAuditEvents:
+    get:
+      tags:
+      - AdminAuditEvents
+      summary: List admin audit events for the organization
+      operationId: listAdminAuditEvents
+      parameters:
+      - in: query
+        name: orgId
+        required: true
+        schema:
+          type: string
+      - in: query
+        name: from
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: to
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - in: query
+        name: actorId
+        schema:
+          type: string
+      - in: query
+        name: max
+        schema:
+          type: integer
+      - in: query
+        name: offset
+        schema:
+          type: integer
+      - in: query
+        name: eventCategories
+        schema:
+          type: array
+          items:
+            type: string
+      - in: query
+        name: eventCategoryOperationTypes
+        schema:
+          type: array
+          items:
+            type: string
+      responses:
+        '200':
+          description: A list of admin audit events
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/AdminAuditEvent'
+components:
+  schemas:
+    AdminAuditEvent:
+      type: object
+      properties:
+        data:
+          type: object
+          properties:
+            actorOrgId:
+              type: string
+            targetName:
+              type: string
+            eventDescription:
+              type: string
+            actorName:
+              type: string
+            actorEmail:
+              type: string
+              format: email
+            adminRoles:
+              type: array
+              items:
+                type: string
+            trackingId:
+              type: string
+            targetType:
+              type: string
+            targetId:
+              type: string
+            eventCategory:
+              type: string
+            actorUserAgent:
+              type: string
+            actorIp:
+              type: string
+            targetOrgId:
+              type: string
+            actionText:
+              type: string
+            targetOrgName:
+              type: string
+        id:
+          type: string
+        actorId:
+          type: string
+        orgId:
+          type: string
+        created:
+          type: string
+          format: date-time
+        eventCategory:
+          type: string
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: OAuth2-Access-Token

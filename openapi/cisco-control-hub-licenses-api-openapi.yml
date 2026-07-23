@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  title: Cisco Webex Control Hub Admin AdminAuditEvents Licenses API
+  description: 'Programmatic access to Cisco Webex Control Hub administration surfaces:
+
+    organizations, people, licenses, locations, workspaces, devices, and
+
+    admin audit events. Authentication uses OAuth 2.0 access tokens or
+
+    service-app tokens scoped to the organization.
+
+    '
+  version: 1.0.0
+  contact:
+    name: Webex for Developers
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+servers:
+- url: https://webexapis.com/v1
+security:
+- bearerAuth: []
+tags:
+- name: Licenses
+paths:
+  /licenses:
+    get:
+      tags:
+      - Licenses
+      summary: List licenses
+      operationId: listLicenses
+      parameters:
+      - in: query
+        name: orgId
+        schema:
+          type: string
+      responses:
+        '200':
+          description: A list of licenses
+  /licenses/{licenseId}:
+    parameters:
+    - in: path
+      name: licenseId
+      required: true
+      schema:
+        type: string
+    get:
+      tags:
+      - Licenses
+      summary: Get license details
+      operationId: getLicense
+      responses:
+        '200':
+          description: A license
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: OAuth2-Access-Token
