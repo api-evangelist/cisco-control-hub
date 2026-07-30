@@ -13,7 +13,20 @@ tags:
   - Reporting
   - Webex
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cisco-control-hub.png
 access: 3rd-Party
 created: '2024-01-01'
 modified: '2026-04-23'
@@ -27,155 +40,216 @@ description: >-
   analytics reports. Authentication uses OAuth 2.0 access tokens or
   service-app tokens scoped to the organization.
 apis:
-  - aid: cisco-control-hub:webex-admin-api
-    name: Webex Admin API
-    tags:
-      - Administration
-      - Audit
-      - Organizations
-      - Users
-    humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/admin-audit-events
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-      - url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
-        type: Authentication
-    description: >-
-      Manage users, licenses, organization settings, and admin audit
-      events for a Webex organization.
-  - aid: cisco-control-hub:webex-calling-api
-    name: Webex Calling API
-    tags:
-      - Calling
-      - Phone Numbers
-      - Telephony
-      - Voice
-    humanURL: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Manage Webex Calling features, phone numbers, dial plans, voice
-      portals, and other organization-wide voice settings.
-  - aid: cisco-control-hub:webex-devices-api
-    name: Webex Devices API
-    tags:
-      - Configuration
-      - Devices
-      - Endpoints
-      - Room Systems
-    humanURL: https://developer.webex.com/docs/api/v1/devices
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/devices
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Manage Webex Room and Desk Devices, MPP phones, and headsets;
-      query device status and push configuration.
-  - aid: cisco-control-hub:webex-workspaces-api
-    name: Webex Workspaces API
-    tags:
-      - Locations
-      - Meeting Rooms
-      - Workspaces
-    humanURL: https://developer.webex.com/docs/api/v1/workspaces
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/workspaces
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Manage physical and virtual workspaces, meeting rooms, and
-      shared-mode devices.
-  - aid: cisco-control-hub:webex-people-api
-    name: Webex People API
-    tags:
-      - Directory
-      - People
-      - Profiles
-      - Users
-    humanURL: https://developer.webex.com/docs/api/v1/people
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/people
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Manage user profiles, status, presence, and directory information.
-  - aid: cisco-control-hub:webex-organizations-api
-    name: Webex Organizations API
-    tags:
-      - Configuration
-      - Organizations
-      - Settings
-    humanURL: https://developer.webex.com/docs/api/v1/organizations
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/organizations
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Inspect and manage Webex organization metadata and global settings.
-  - aid: cisco-control-hub:webex-licenses-api
-    name: Webex Licenses API
-    tags:
-      - Entitlements
-      - Licenses
-      - Subscriptions
-    humanURL: https://developer.webex.com/docs/api/v1/licenses
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/licenses
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      List and assign Webex licenses and subscription entitlements to
-      users.
-  - aid: cisco-control-hub:webex-locations-api
-    name: Webex Locations API
-    tags:
-      - Calling
-      - Geography
-      - Locations
-    humanURL: https://developer.webex.com/docs/api/v1/locations
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/locations
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Manage geographic locations used by Webex Calling for emergency
-      services routing, time zones, and number assignments.
-  - aid: cisco-control-hub:webex-reports-api
-    name: Webex Reports API
-    tags:
-      - Analytics
-      - Metrics
-      - Reports
-      - Usage
-    humanURL: https://developer.webex.com/docs/api/v1/reports
-    baseURL: https://webexapis.com/v1
-    properties:
-      - url: https://developer.webex.com/docs/api/v1/reports
-        type: Documentation
-      - url: https://developer.webex.com/docs/api/v1/openapi.json
-        type: OpenAPI
-    description: >-
-      Generate and download analytics and usage reports for Webex
-      services.
+- aid: cisco-control-hub:cisco-control-hub-adminauditevents-api
+  name: Cisco Control Hub AdminAuditEvents API
+  description: The AdminAuditEvents API from Cisco Control Hub — 1 operation(s) for adminauditevents.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - AdminAuditEvents
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-adminauditevents-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
+- aid: cisco-control-hub:cisco-control-hub-devices-api
+  name: Cisco Control Hub Devices API
+  description: The Devices API from Cisco Control Hub — 1 operation(s) for devices.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Devices
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-devices-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
+- aid: cisco-control-hub:cisco-control-hub-licenses-api
+  name: Cisco Control Hub Licenses API
+  description: The Licenses API from Cisco Control Hub — 2 operation(s) for licenses.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Licenses
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-licenses-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
+- aid: cisco-control-hub:cisco-control-hub-locations-api
+  name: Cisco Control Hub Locations API
+  description: The Locations API from Cisco Control Hub — 2 operation(s) for locations.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Locations
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-locations-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
+- aid: cisco-control-hub:cisco-control-hub-organizations-api
+  name: Cisco Control Hub Organizations API
+  description: The Organizations API from Cisco Control Hub — 2 operation(s) for organizations.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Organizations
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-organizations-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
+- aid: cisco-control-hub:cisco-control-hub-people-api
+  name: Cisco Control Hub People API
+  description: The People API from Cisco Control Hub — 2 operation(s) for people.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - People
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-people-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
+- aid: cisco-control-hub:cisco-control-hub-workspaces-api
+  name: Cisco Control Hub Workspaces API
+  description: The Workspaces API from Cisco Control Hub — 1 operation(s) for workspaces.
+  humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
+  baseURL: https://webexapis.com/v1
+  tags:
+  - Workspaces
+  properties:
+  - type: OpenAPI
+    url: openapi/cisco-control-hub-workspaces-api-openapi.yml
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/admin-audit-events
+  - type: Authentication
+    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/webex-calling-organization-settings
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/devices
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/workspaces
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/people
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/organizations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/licenses
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/locations
+  - type: Documentation
+    url: https://developer.webex.com/docs/api/v1/reports
 common:
   - type: Portal
     url: https://developer.webex.com
