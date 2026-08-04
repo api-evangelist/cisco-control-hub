@@ -1,0 +1,26 @@
+{
+  "provider": "cisco-control-hub",
+  "sources": [
+    "cisco-control-hub-adminauditevents-api-openapi.yml",
+    "cisco-control-hub-devices-api-openapi.yml",
+    "cisco-control-hub-licenses-api-openapi.yml",
+    "cisco-control-hub-locations-api-openapi.yml",
+    "cisco-control-hub-organizations-api-openapi.yml",
+    "cisco-control-hub-people-api-openapi.yml",
+    "cisco-control-hub-workspaces-api-openapi.yml"
+  ],
+  "outputs": [
+    "cisco-control-hub-adminauditevents-api-openapi.yml",
+    "cisco-control-hub-devices-api-openapi.yml",
+    "cisco-control-hub-licenses-api-openapi.yml",
+    "cisco-control-hub-locations-api-openapi.yml",
+    "cisco-control-hub-organizations-api-openapi.yml",
+    "cisco-control-hub-people-api-openapi.yml",
+    "cisco-control-hub-workspaces-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
