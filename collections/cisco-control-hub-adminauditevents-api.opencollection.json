@@ -1,0 +1,77 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "AdminAuditEvents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List admin audit events for the organization",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/adminAuditEvents",
+            "params": [
+              {
+                "name": "orgId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "from",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "to",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "actorId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "offset",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "eventCategories",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "eventCategoryOperationTypes",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List admin audit events for the organization"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,52 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents Workspaces API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Workspaces",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List workspaces",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/workspaces",
+            "params": [
+              {
+                "name": "orgId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "locationId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List workspaces"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

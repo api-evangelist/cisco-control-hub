@@ -1,0 +1,542 @@
+{
+  "item": [
+    {
+      "id": "74086f84-7336-4d39-87f9-3687e67f9235",
+      "name": "People",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "450402bb-dde0-4fad-9fc2-668cefe83406",
+          "name": "List people",
+          "request": {
+            "name": "List people",
+            "description": {},
+            "url": {
+              "path": [
+                "people"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "email",
+                  "value": "<email>"
+                },
+                {
+                  "disabled": false,
+                  "key": "displayName",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "id",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "orgId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "showAllTypes",
+                  "value": "<boolean>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "516ff728-02ba-48a3-9731-d66df4155691",
+              "name": "A list of people",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "people"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "email",
+                      "value": "<email>"
+                    },
+                    {
+                      "key": "displayName",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "id",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "orgId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "showAllTypes",
+                      "value": "<boolean>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"emails\": [\n        \"btmrGvDrQM@GNbSSYbhTnncdlnTWzugOcHJSr.irk\",\n        \"XwABdeFmF3ldrZ@aUBtIwPWjq.vv\"\n      ],\n      \"displayName\": \"string\",\n      \"firstName\": \"string\",\n      \"lastName\": \"string\",\n      \"nickName\": \"string\",\n      \"avatar\": \"http://CJZENVHqpvbBrNIy.eupnzmN7sMVKsUKO-3kmoGBVVI\",\n      \"orgId\": \"string\",\n      \"roles\": [\n        \"string\",\n        \"string\"\n      ],\n      \"licenses\": [\n        \"string\",\n        \"string\"\n      ],\n      \"created\": \"1976-03-26T21:56:12.266Z\",\n      \"lastModified\": \"2002-01-04T01:46:49.673Z\",\n      \"timezone\": \"string\",\n      \"lastActivity\": \"1989-12-24T02:53:57.340Z\",\n      \"status\": \"string\",\n      \"type\": \"bot\",\n      \"userName\": \"string\",\n      \"loginEnabled\": false\n    },\n    {\n      \"id\": \"string\",\n      \"emails\": [\n        \"mKIV@vFfDIPIAZKhtKdVnQbeiyRCvI.vye\",\n        \"uOxP@AVmNlZuzmNkLJvK.wf\"\n      ],\n      \"displayName\": \"string\",\n      \"firstName\": \"string\",\n      \"lastName\": \"string\",\n      \"nickName\": \"string\",\n      \"avatar\": \"https://dQTqgbOccv.umbsVIiiXauzJG-Zrr8b8zpocl9KG6wjBrneNxma8k3tfVWajOnG7QiKVDv\",\n      \"orgId\": \"string\",\n      \"roles\": [\n        \"string\",\n        \"string\"\n      ],\n      \"licenses\": [\n        \"string\",\n        \"string\"\n      ],\n      \"created\": \"1960-11-27T11:04:19.210Z\",\n      \"lastModified\": \"1992-01-21T20:15:13.369Z\",\n      \"timezone\": \"string\",\n      \"lastActivity\": \"2009-11-20T13:57:36.783Z\",\n      \"status\": \"string\",\n      \"type\": \"appuser\",\n      \"userName\": \"string\",\n      \"loginEnabled\": true\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "0fde601b-93ae-4724-b3e9-e909750495d0",
+          "name": "Create a person",
+          "request": {
+            "name": "Create a person",
+            "description": {},
+            "url": {
+              "path": [
+                "people"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"<string>\",\n  \"emails\": [\n    \"<email>\",\n    \"<email>\"\n  ],\n  \"displayName\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"nickName\": \"<string>\",\n  \"avatar\": \"<uri>\",\n  \"orgId\": \"<string>\",\n  \"roles\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"licenses\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"created\": \"<dateTime>\",\n  \"lastModified\": \"<dateTime>\",\n  \"timezone\": \"<string>\",\n  \"lastActivity\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"type\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"loginEnabled\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "1a74925d-eebf-42ae-a95d-6b164c643b93",
+              "name": "Created person",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "people"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"<string>\",\n  \"emails\": [\n    \"<email>\",\n    \"<email>\"\n  ],\n  \"displayName\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"nickName\": \"<string>\",\n  \"avatar\": \"<uri>\",\n  \"orgId\": \"<string>\",\n  \"roles\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"licenses\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"created\": \"<dateTime>\",\n  \"lastModified\": \"<dateTime>\",\n  \"timezone\": \"<string>\",\n  \"lastActivity\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"type\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"loginEnabled\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "8d6db878-5001-4108-94eb-cee034b528fc",
+          "name": "Get person details",
+          "request": {
+            "name": "Get person details",
+            "description": {},
+            "url": {
+              "path": [
+                "people",
+                ":personId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "723291e6-b257-4de8-aed6-26e583d47699",
+              "name": "A person",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "people",
+                    ":personId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "personId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"emails\": [\n    \"MDLOwwLd@xbNTaYEpVPrOSxkVAUxq.sqxg\",\n    \"l8dM3yWlZ4dLSH3@mYoBXdGAACdIgT.dekp\"\n  ],\n  \"displayName\": \"string\",\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"nickName\": \"string\",\n  \"avatar\": \"http://vFNxQIhYAASICmuBHhJKCOuDoz.vgEXK5wBjls5Vd2GvhH1r,RqP9UvGwltmhUWA7akLHBTHrAI4Hx8C\",\n  \"orgId\": \"string\",\n  \"roles\": [\n    \"string\",\n    \"string\"\n  ],\n  \"licenses\": [\n    \"string\",\n    \"string\"\n  ],\n  \"created\": \"2013-09-26T10:02:44.895Z\",\n  \"lastModified\": \"1995-04-24T10:17:18.341Z\",\n  \"timezone\": \"string\",\n  \"lastActivity\": \"1959-07-18T10:31:12.599Z\",\n  \"status\": \"string\",\n  \"type\": \"bot\",\n  \"userName\": \"string\",\n  \"loginEnabled\": false\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "aa349626-afb1-4d44-a808-963ce296ce71",
+          "name": "Update a person",
+          "request": {
+            "name": "Update a person",
+            "description": {},
+            "url": {
+              "path": [
+                "people",
+                ":personId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "PUT",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"id\": \"<string>\",\n  \"emails\": [\n    \"<email>\",\n    \"<email>\"\n  ],\n  \"displayName\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"nickName\": \"<string>\",\n  \"avatar\": \"<uri>\",\n  \"orgId\": \"<string>\",\n  \"roles\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"licenses\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"created\": \"<dateTime>\",\n  \"lastModified\": \"<dateTime>\",\n  \"timezone\": \"<string>\",\n  \"lastActivity\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"type\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"loginEnabled\": \"<boolean>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c5041ef0-a5a1-4927-98cb-89ea6b37fb45",
+              "name": "Updated person",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "people",
+                    ":personId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "personId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "PUT",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"id\": \"<string>\",\n  \"emails\": [\n    \"<email>\",\n    \"<email>\"\n  ],\n  \"displayName\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"nickName\": \"<string>\",\n  \"avatar\": \"<uri>\",\n  \"orgId\": \"<string>\",\n  \"roles\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"licenses\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"created\": \"<dateTime>\",\n  \"lastModified\": \"<dateTime>\",\n  \"timezone\": \"<string>\",\n  \"lastActivity\": \"<dateTime>\",\n  \"status\": \"<string>\",\n  \"type\": \"<string>\",\n  \"userName\": \"<string>\",\n  \"loginEnabled\": \"<boolean>\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a31956bd-8552-43a6-8395-74c7b7489682",
+          "name": "Delete a person",
+          "request": {
+            "name": "Delete a person",
+            "description": {},
+            "url": {
+              "path": [
+                "people",
+                ":personId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "personId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d991285a-60a3-4f56-a869-c6f9574a2114",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "people",
+                    ":personId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "personId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "3d1c7e98-15af-497c-8542-5118aa2d1c78",
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents People API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Programmatic access to Cisco Webex Control Hub administration surfaces:\norganizations, people, licenses, locations, workspaces, devices, and\nadmin audit events. Authentication uses OAuth 2.0 access tokens or\nservice-app tokens scoped to the organization.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}

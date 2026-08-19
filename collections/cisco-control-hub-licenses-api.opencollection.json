@@ -1,0 +1,60 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents Licenses API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Licenses",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List licenses",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/licenses",
+            "params": [
+              {
+                "name": "orgId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List licenses"
+        },
+        {
+          "info": {
+            "name": "Get license details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/licenses/:licenseId",
+            "params": [
+              {
+                "name": "licenseId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get license details"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

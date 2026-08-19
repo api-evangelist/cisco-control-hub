@@ -1,0 +1,135 @@
+{
+  "item": [
+    {
+      "id": "f5c6f437-1d3a-4794-ae70-bce7c60e621d",
+      "name": "Workspaces",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d21bde2a-def2-4143-9652-2a0f0e3fc617",
+          "name": "List workspaces",
+          "request": {
+            "name": "List workspaces",
+            "description": {},
+            "url": {
+              "path": [
+                "workspaces"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "orgId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "locationId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5fb8df01-53a7-4b2c-b1ce-4f79ad483eec",
+              "name": "A list of workspaces",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "workspaces"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "locationId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "cc69e7ac-0616-4bea-b9f2-8118de9e34e1",
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents Workspaces API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Programmatic access to Cisco Webex Control Hub administration surfaces:\norganizations, people, licenses, locations, workspaces, devices, and\nadmin audit events. Authentication uses OAuth 2.0 access tokens or\nservice-app tokens scoped to the organization.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}

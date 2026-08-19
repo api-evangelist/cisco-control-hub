@@ -1,0 +1,303 @@
+{
+  "item": [
+    {
+      "id": "353db87a-f5d8-4db2-aa3c-25329ccd5436",
+      "name": "Organizations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "d3def4ee-9c27-42c6-9a69-83a03196aaea",
+          "name": "List organizations",
+          "request": {
+            "name": "List organizations",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "1699417a-84f8-4bde-ab64-dbad156d88a7",
+              "name": "A list of organizations",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"id\": \"string\",\n      \"displayName\": \"string\",\n      \"created\": \"2016-06-05T15:08:51.126Z\",\n      \"xsiActionsEndpoint\": \"http://WaLlHkQR.gayKf2hrZ8uONp3mznTSB2hO5nA0el0Qn3fvVITEgOc\",\n      \"xsiEventsEndpoint\": \"https://PazwRy.jnbELe0G+gQD\",\n      \"xsiEventsChannelEndpoint\": \"http://CpdyxOHIJdnAbIFdLksKnJRkthFgUDOa.beosAW3J5fcpzw,dxsxygZn2G6UaMmcgVe2F0GNbWpUqzcMDJdJuBNIZCrjyG\",\n      \"bcBaseDomain\": \"string\"\n    },\n    {\n      \"id\": \"string\",\n      \"displayName\": \"string\",\n      \"created\": \"1976-10-30T23:28:38.571Z\",\n      \"xsiActionsEndpoint\": \"http://JHHVCLGtDZvL.byend-YP-PO31lgF8SW\",\n      \"xsiEventsEndpoint\": \"http://LEFzjYSapr.qqbcBAKCHXQEDEmxPR-tMFqK2rHLesh..zH3XIv1XvRARw0JytZ+\",\n      \"xsiEventsChannelEndpoint\": \"https://errAljCSPIyLjVQsTZXowNrqsWDnEVRLU.flmKGWkWqlrD2e0gsz8mlzbJPVX8ZVrd,L,y\",\n      \"bcBaseDomain\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "98973990-7e98-4c52-944f-9364b9332b87",
+          "name": "Get organization details",
+          "request": {
+            "name": "Get organization details",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":orgId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orgId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a6777849-6105-4576-b673-6320ea9c390c",
+              "name": "An organization",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":orgId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orgId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"id\": \"string\",\n  \"displayName\": \"string\",\n  \"created\": \"1951-11-28T08:54:09.720Z\",\n  \"xsiActionsEndpoint\": \"https://HaZUYsnYllMsjbjNvomBnbIpUcjZo.hsiwls\",\n  \"xsiEventsEndpoint\": \"http://CaxxTfMvnmxEbmexetLAKmJpZdwIxPGz.pjkR7,tv-9\",\n  \"xsiEventsChannelEndpoint\": \"https://AJEuypScVUUGJalAPDMi.gbrxjnFqiDzGvragsRDZRzsmAS\",\n  \"bcBaseDomain\": \"string\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "110facde-77a6-47fc-ba19-79b2b63420db",
+          "name": "Delete an organization",
+          "request": {
+            "name": "Delete an organization",
+            "description": {},
+            "url": {
+              "path": [
+                "organizations",
+                ":orgId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "orgId",
+                  "description": "(Required) "
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "59df77c7-d50b-4a34-8a70-12ef910a9453",
+              "name": "Deleted",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "organizations",
+                    ":orgId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "orgId",
+                      "description": "(Required) "
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "8041f546-11a2-4de4-9649-c7c2d288450a",
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents Organizations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Programmatic access to Cisco Webex Control Hub administration surfaces:\norganizations, people, licenses, locations, workspaces, devices, and\nadmin audit events. Authentication uses OAuth 2.0 access tokens or\nservice-app tokens scoped to the organization.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}

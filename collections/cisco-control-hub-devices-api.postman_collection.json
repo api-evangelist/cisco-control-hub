@@ -1,0 +1,144 @@
+{
+  "item": [
+    {
+      "id": "bd5d5010-efa7-4f41-aa9b-5c2b250c58b8",
+      "name": "Devices",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "8a00c958-ea45-4980-834f-709926373f2a",
+          "name": "List devices",
+          "request": {
+            "name": "List devices",
+            "description": {},
+            "url": {
+              "path": [
+                "devices"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "orgId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "personId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "workspaceId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cba7f451-acc8-4c25-abb0-86dcb2bbb24f",
+              "name": "A list of devices",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "devices"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "personId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "workspaceId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "28cfd176-6475-4694-8cfb-28196ccfd357",
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents Devices API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Programmatic access to Cisco Webex Control Hub administration surfaces:\norganizations, people, licenses, locations, workspaces, devices, and\nadmin audit events. Authentication uses OAuth 2.0 access tokens or\nservice-app tokens scoped to the organization.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}

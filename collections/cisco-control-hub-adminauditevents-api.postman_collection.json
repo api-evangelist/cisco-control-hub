@@ -1,0 +1,211 @@
+{
+  "item": [
+    {
+      "id": "fe9895b2-6fa2-4724-b822-8d76a21e1535",
+      "name": "AdminAuditEvents",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "730f908c-761c-437f-8098-c99c229f5965",
+          "name": "List admin audit events for the organization",
+          "request": {
+            "name": "List admin audit events for the organization",
+            "description": {},
+            "url": {
+              "path": [
+                "adminAuditEvents"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "orgId",
+                  "value": "<string>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "from",
+                  "value": "<dateTime>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "to",
+                  "value": "<dateTime>",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "key": "actorId",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "max",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "offset",
+                  "value": "<integer>"
+                },
+                {
+                  "disabled": false,
+                  "key": "eventCategories",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "eventCategories",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "eventCategoryOperationTypes",
+                  "value": "<string>"
+                },
+                {
+                  "disabled": false,
+                  "key": "eventCategoryOperationTypes",
+                  "value": "<string>"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ea9194d3-8fff-43fc-a4b9-2320cb4e3cf0",
+              "name": "A list of admin audit events",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "adminAuditEvents"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "orgId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "from",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "to",
+                      "value": "<dateTime>"
+                    },
+                    {
+                      "key": "actorId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "max",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "offset",
+                      "value": "<integer>"
+                    },
+                    {
+                      "key": "eventCategories",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "eventCategories",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "eventCategoryOperationTypes",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "eventCategoryOperationTypes",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"items\": [\n    {\n      \"data\": {\n        \"actorOrgId\": \"string\",\n        \"targetName\": \"string\",\n        \"eventDescription\": \"string\",\n        \"actorName\": \"string\",\n        \"actorEmail\": \"SjGDb7-fEHi0@EJecIHgkgmsfOYUkDwWsgyhHhxmuqRHXe.tnoq\",\n        \"adminRoles\": [\n          \"string\",\n          \"string\"\n        ],\n        \"trackingId\": \"string\",\n        \"targetType\": \"string\",\n        \"targetId\": \"string\",\n        \"eventCategory\": \"string\",\n        \"actorUserAgent\": \"string\",\n        \"actorIp\": \"string\",\n        \"targetOrgId\": \"string\",\n        \"actionText\": \"string\",\n        \"targetOrgName\": \"string\"\n      },\n      \"id\": \"string\",\n      \"actorId\": \"string\",\n      \"orgId\": \"string\",\n      \"created\": \"1995-08-13T01:36:57.433Z\",\n      \"eventCategory\": \"string\"\n    },\n    {\n      \"data\": {\n        \"actorOrgId\": \"string\",\n        \"targetName\": \"string\",\n        \"eventDescription\": \"string\",\n        \"actorName\": \"string\",\n        \"actorEmail\": \"79V@REjCJHPYKDeNBnBSMHUF.vw\",\n        \"adminRoles\": [\n          \"string\",\n          \"string\"\n        ],\n        \"trackingId\": \"string\",\n        \"targetType\": \"string\",\n        \"targetId\": \"string\",\n        \"eventCategory\": \"string\",\n        \"actorUserAgent\": \"string\",\n        \"actorIp\": \"string\",\n        \"targetOrgId\": \"string\",\n        \"actionText\": \"string\",\n        \"targetOrgName\": \"string\"\n      },\n      \"id\": \"string\",\n      \"actorId\": \"string\",\n      \"orgId\": \"string\",\n      \"created\": \"1973-09-13T02:41:41.299Z\",\n      \"eventCategory\": \"string\"\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://webexapis.com/v1",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "43f99e3e-0a51-4f87-9466-af0812a92fb3",
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Programmatic access to Cisco Webex Control Hub administration surfaces:\norganizations, people, licenses, locations, workspaces, devices, and\nadmin audit events. Authentication uses OAuth 2.0 access tokens or\nservice-app tokens scoped to the organization.\n\n\nContact Support:\n Name: Webex for Developers",
+      "type": "text/plain"
+    }
+  }
+}

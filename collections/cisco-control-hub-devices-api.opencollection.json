@@ -1,0 +1,57 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Cisco Webex Control Hub Admin AdminAuditEvents Devices API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Devices",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List devices",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://webexapis.com/v1/devices",
+            "params": [
+              {
+                "name": "orgId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "personId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "workspaceId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "max",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List devices"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
