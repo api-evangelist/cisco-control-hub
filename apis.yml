@@ -31,7 +31,7 @@ access: 3rd-Party
 created: '2024-01-01'
 modified: '2026-04-23'
 position: Consumer
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Cisco Control Hub is the administration console for Webex services.
   Programmatic access is delivered through the Webex Admin and adjacent
