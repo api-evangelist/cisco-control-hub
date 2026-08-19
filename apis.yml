@@ -1,17 +1,16 @@
 aid: cisco-control-hub
-url: >-
-  https://raw.githubusercontent.com/api-evangelist/cisco-control-hub/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/cisco-control-hub/refs/heads/main/apis.yml
 name: Cisco Control Hub
 tags:
-  - Administration
-  - Calling
-  - Collaboration
-  - Communications
-  - Device Management
-  - Identity Management
-  - Licenses
-  - Reporting
-  - Webex
+- Administration
+- Calling
+- Collaboration
+- Communications
+- Device Management
+- Identity Management
+- Licenses
+- Reporting
+- Webex
 type: Index
 accessModel:
   pricing: freemium
@@ -29,16 +28,13 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cisco-control-hub.png
 access: 3rd-Party
 created: '2024-01-01'
-modified: '2026-04-23'
+modified: '2026-08-19'
 position: Consumer
 specificationVersion: '0.23'
-description: >-
-  Cisco Control Hub is the administration console for Webex services.
-  Programmatic access is delivered through the Webex Admin and adjacent
-  REST APIs at webexapis.com — covering people, organizations, locations,
-  workspaces, devices, licenses, calling configuration, audit events, and
-  analytics reports. Authentication uses OAuth 2.0 access tokens or
-  service-app tokens scoped to the organization.
+description: Cisco Control Hub is the administration console for Webex services. Programmatic access is delivered
+  through the Webex Admin and adjacent REST APIs at webexapis.com — covering people, organizations, locations, workspaces,
+  devices, licenses, calling configuration, audit events, and analytics reports. Authentication uses OAuth 2.0 access
+  tokens or service-app tokens scoped to the organization.
 apis:
 - aid: cisco-control-hub:cisco-control-hub-adminauditevents-api
   name: Cisco Control Hub AdminAuditEvents API
@@ -251,40 +247,21 @@ apis:
   - type: Documentation
     url: https://developer.webex.com/docs/api/v1/reports
 common:
-  - type: Portal
-    url: https://developer.webex.com
-  - type: Console
-    url: https://admin.webex.com
-  - type: Authentication
-    url: https://developer.webex.com/docs/getting-started#accounts-and-authentication
-  - type: RateLimits
-    url: https://developer.webex.com/docs/api-guidelines#rate-limiting
-  - type: StatusPage
-    url: https://status.webex.com
-  - type: Support
-    url: https://developer.webex.com/support
-  - type: ChangeLog
-    url: https://developer.webex.com/changelog
-  - type: GitHubOrganization
-    url: https://github.com/WebexSamples
-  - type: TermsOfService
-    url: https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html
-  - type: PrivacyPolicy
-    url: https://www.cisco.com/c/en/us/about/legal/privacy-full.html
-  - type: JSONLD
-    url: json-ld/cisco-control-hub-context.jsonld
-  - type: Spectral
-    url: rules/cisco-control-hub-rules.yml
+- type: ParentCompany
+  url: https://apis.io/providers/webex/
+  name: Webex
+  x-relationship: product
+  x-generated-by: cisco-family:2026-08-19
+- type: AgenticAccess
+  url: agentic-access/cisco-control-hub-agentic-access.yml
+- type: DomainSecurity
+  url: security/cisco-control-hub-domain-security.yml
+- type: Authentication
+  url: authentication/cisco-control-hub-authentication.yml
+- url: https://blog.webex.com/feed/
+  type: Blog
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
-
-common:
-  - type: AgenticAccess
-    url: agentic-access/cisco-control-hub-agentic-access.yml
-  - type: DomainSecurity
-    url: security/cisco-control-hub-domain-security.yml
-  - type: Authentication
-    url: authentication/cisco-control-hub-authentication.yml
-  - url: https://blog.webex.com/feed/
-    type: Blog
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-parent: webex
+x-relationship: product
