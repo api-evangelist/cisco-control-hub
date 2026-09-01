@@ -53,7 +53,7 @@ apis:
   humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
   baseURL: https://webexapis.com/v1
   tags:
-  - AdminAuditEvents
+  - Admin Audit Events
   tags_raw:
   - AdminAuditEvents
   properties:
