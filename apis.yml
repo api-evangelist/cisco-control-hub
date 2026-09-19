@@ -114,6 +114,8 @@ apis:
   humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
   baseURL: https://webexapis.com/v1
   tags:
+  - Location
+  tags_raw:
   - Locations
   properties:
   - type: OpenAPI
@@ -206,6 +208,8 @@ apis:
   humanURL: https://developer.webex.com/docs/api/v1/admin-audit-events
   baseURL: https://webexapis.com/v1
   tags:
+  - Workspace
+  tags_raw:
   - Workspaces
   properties:
   - type: OpenAPI
