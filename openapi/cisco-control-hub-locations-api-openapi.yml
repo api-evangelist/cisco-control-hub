@@ -1,15 +1,13 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Cisco Webex Control Hub Admin AdminAuditEvents Locations API
+  title: Cisco Webex Control Hub Admin Locations API
   description: 'Programmatic access to Cisco Webex Control Hub administration surfaces:
 
     organizations, people, licenses, locations, workspaces, devices, and
 
     admin audit events. Authentication uses OAuth 2.0 access tokens or
 
-    service-app tokens scoped to the organization.
-
-    '
+    service-app tokens scoped to the organization.'
   version: 1.0.0
   contact:
     name: Webex for Developers

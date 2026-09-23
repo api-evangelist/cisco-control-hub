@@ -1,13 +1,7 @@
 {
   "provider": "cisco-control-hub",
   "sources": [
-    "cisco-control-hub-adminauditevents-api-openapi.yml",
-    "cisco-control-hub-devices-api-openapi.yml",
-    "cisco-control-hub-licenses-api-openapi.yml",
-    "cisco-control-hub-locations-api-openapi.yml",
-    "cisco-control-hub-organizations-api-openapi.yml",
-    "cisco-control-hub-people-api-openapi.yml",
-    "cisco-control-hub-workspaces-api-openapi.yml"
+    "_original/cisco-control-hub-openapi.yml"
   ],
   "outputs": [
     "cisco-control-hub-adminauditevents-api-openapi.yml",
@@ -18,9 +12,24 @@
     "cisco-control-hub-people-api-openapi.yml",
     "cisco-control-hub-workspaces-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "cisco-control-hub-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "superseded outputs removed: cisco-control-hub-admin-audit-events-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 7 total)"
+  ],
+  "skipped": [
+    "cisco-control-hub-admin-audit-events-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-control-hub-devices-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-control-hub-licenses-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-control-hub-locations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-control-hub-organizations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-control-hub-people-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "cisco-control-hub-workspaces-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
