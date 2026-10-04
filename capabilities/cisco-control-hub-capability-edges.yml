@@ -1,0 +1,26 @@
+slug: cisco-control-hub
+provider: Cisco Control Hub
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: People
+  spec_file: cisco-control-hub-people-api-openapi.yml
+  capability_id: BC-620.20
+  capability_id_l1: BC-620
+  capability_name: Identity & Access Management
+  confidence: 0.7
+  evidence: 'POST /people  createPerson  Create a person; DELETE /people/{personId}  deletePerson  Delete
+    a person; schemas: Person'
+  reason: Full CRUD on user accounts within an organization's Webex directory — joiner/mover/leaver account
+    provisioning, i.e. identity and access management. Not HR employee records; these are service accounts
+    in a collaboration tool.

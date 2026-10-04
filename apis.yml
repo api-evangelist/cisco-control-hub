@@ -266,6 +266,9 @@ apis:
   - type: Documentation
     url: https://developer.webex.com/docs/api/v1/reports
 common:
+- type: CapabilityMap
+  url: capabilities/cisco-control-hub-capability-edges.yml
+  name: Cisco Control Hub Business Capability Map
 - type: ParentCompany
   url: https://apis.io/providers/webex/
   name: Webex
