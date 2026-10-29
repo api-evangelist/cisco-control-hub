@@ -1,4 +1,4 @@
-# Cisco Control Hub (cisco-control-hub)
+# Cisco Control Hub
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,235 +66,102 @@
 
 Cisco Control Hub is the administration console for Webex services. Programmatic access is delivered through the Webex Admin and adjacent REST APIs at webexapis.com — covering people, organizations, locations, workspaces, devices, licenses, calling configuration, audit events, and analytics reports. Authentication uses OAuth 2.0 access tokens or service-app tokens scoped to the organization.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/cisco-control-hub/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/cisco-control-hub/refs/heads/main/apis.yml)
+**Areas:** Administration · Calling · Collaboration · Communications · Device Management · Identity and Access Management · Licenses · Reporting · Webex
 
-## Scope
+## Cisco Control Hub on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Cisco Control Hub is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cisco-control-hub/](https://apis.io/providers/cisco-control-hub/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (7)
 
-- Administration
-- Calling
-- Collaboration
-- Communications
-- Device Management
-- Identity Management
-- Licenses
-- Reporting
-- Webex
+- [Cisco Control Hub Devices API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-devices-api/) — The Devices API from Cisco Control Hub — 1 operation(s) for devices.
+- [Cisco Control Hub Licenses API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-licenses-api/) — The Licenses API from Cisco Control Hub — 2 operation(s) for licenses.
+- [Cisco Control Hub Locations API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-locations-api/) — The Locations API from Cisco Control Hub — 2 operation(s) for locations.
+- [Cisco Control Hub Organizations API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-organizations-api/) — The Organizations API from Cisco Control Hub — 2 operation(s) for organizations.
+- [Cisco Control Hub People API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-people-api/) — The People API from Cisco Control Hub — 2 operation(s) for people.
+- [Cisco Control Hub Workspaces API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-workspaces-api/) — The Workspaces API from Cisco Control Hub — 1 operation(s) for workspaces.
+- [Cisco Control Hub Admin Audit Events API](https://apis.io/apis/cisco-control-hub/cisco-control-hub-admin-audit-events-api/) — The Admin Audit Events API from Cisco Control Hub — 1 operation(s) for admin audit events.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-01-01
-- **Modified:** 2026-04-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Webex Admin API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Manage users, licenses, organization settings, and admin audit events for a Webex organization.
+- [Cisco Control Hub Agentic Access](https://apis.io/agentic-access/cisco-control-hub/cisco-control-hub-agentic-access/)
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/admin-audit-events](https://developer.webex.com/docs/api/v1/admin-audit-events)
-- **Base URL:** `https://webexapis.com/v1`
+#### JSON-LD (1)
 
-#### Tags
+Linked-data contexts for the provider's vocabulary.
 
-- Administration
-- Audit
-- Organizations
-- Users
+- [Cisco Control Hub Context](https://apis.io/jsonld/cisco-control-hub/cisco-control-hub-context/)
 
-#### Properties
+#### Collections (8)
 
-- [Documentation](https://developer.webex.com/docs/api/v1/admin-audit-events)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Authentication](https://developer.webex.com/docs/getting-started#accounts-and-authentication)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Postman and Open Collection request collections.
 
-### Webex Calling API
+- [Cisco Webex Control Hub Admin API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-adminauditevents-api/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents Devices API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-devices-api/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents Licenses API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-licenses-api/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents Locations API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-locations-api/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents Organizations API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-organizations-api/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents People API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-people-api/)
+- [Cisco Webex Control Hub Admin AdminAuditEvents Workspaces API](https://apis.io/collections/cisco-control-hub/open-cisco-control-hub-workspaces-api/)
 
-Manage Webex Calling features, phone numbers, dial plans, voice portals, and other organization-wide voice settings.
+#### Governance rules (1)
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/webex-calling-organization-settings](https://developer.webex.com/docs/api/v1/webex-calling-organization-settings)
-- **Base URL:** `https://webexapis.com/v1`
+Spectral rulesets for the provider's contracts.
 
-#### Tags
+- [Cisco Control Hub API Rules](https://apis.io/rules/cisco-control-hub/cisco-control-hub-rules/)
 
-- Calling
-- Phone Numbers
-- Telephony
-- Voice
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://developer.webex.com/docs/api/v1/webex-calling-organization-settings)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Cisco Control Hub Authentication](https://apis.io/security/cisco-control-hub/cisco-control-hub-authentication/)
+- [Cisco Control Hub Domain Security](https://apis.io/security/cisco-control-hub/cisco-control-hub-domain-security/)
 
-### Webex Devices API
+#### Plans and pricing (1)
 
-Manage Webex Room and Desk Devices, MPP phones, and headsets; query device status and push configuration.
+Published plans, tiers and prices.
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/devices](https://developer.webex.com/docs/api/v1/devices)
-- **Base URL:** `https://webexapis.com/v1`
+- [Cisco Control Hub Plans Pricing](https://apis.io/plans/cisco-control-hub/cisco-control-hub-plans-pricing/)
 
-#### Tags
+#### Rate limits (1)
 
-- Configuration
-- Devices
-- Endpoints
-- Room Systems
+Published request limits.
 
-#### Properties
+- [Cisco Control Hub Rate Limits](https://apis.io/rate-limits/cisco-control-hub/cisco-control-hub-rate-limits/)
 
-- [Documentation](https://developer.webex.com/docs/api/v1/devices)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### FinOps (1)
 
-### Webex Workspaces API
+What the API costs to run, by operation.
 
-Manage physical and virtual workspaces, meeting rooms, and shared-mode devices.
+- [Cisco Control Hub Finops](https://apis.io/finops/cisco-control-hub/cisco-control-hub-finops/)
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/workspaces](https://developer.webex.com/docs/api/v1/workspaces)
-- **Base URL:** `https://webexapis.com/v1`
+## Where to find this API
 
-#### Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Locations
-- Meeting Rooms
-- Workspaces
+- [Blog](https://blog.webex.com/feed/)
 
-#### Properties
+## API Evangelist rating
 
-- [Documentation](https://developer.webex.com/docs/api/v1/workspaces)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-### Webex People API
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-Manage user profiles, status, presence, and directory information.
+## How this profile is made
 
-- **Human URL:** [https://developer.webex.com/docs/api/v1/people](https://developer.webex.com/docs/api/v1/people)
-- **Base URL:** `https://webexapis.com/v1`
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-#### Tags
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cisco Control Hub: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- Directory
-- People
-- Profiles
-- Users
+## Open an issue
 
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/people)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Organizations API
-
-Inspect and manage Webex organization metadata and global settings.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/organizations](https://developer.webex.com/docs/api/v1/organizations)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Configuration
-- Organizations
-- Settings
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/organizations)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Licenses API
-
-List and assign Webex licenses and subscription entitlements to users.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/licenses](https://developer.webex.com/docs/api/v1/licenses)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Entitlements
-- Licenses
-- Subscriptions
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/licenses)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Locations API
-
-Manage geographic locations used by Webex Calling for emergency services routing, time zones, and number assignments.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/locations](https://developer.webex.com/docs/api/v1/locations)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Calling
-- Geography
-- Locations
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/locations)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### Webex Reports API
-
-Generate and download analytics and usage reports for Webex services.
-
-- **Human URL:** [https://developer.webex.com/docs/api/v1/reports](https://developer.webex.com/docs/api/v1/reports)
-- **Base URL:** `https://webexapis.com/v1`
-
-#### Tags
-
-- Analytics
-- Metrics
-- Reports
-- Usage
-
-#### Properties
-
-- [Documentation](https://developer.webex.com/docs/api/v1/reports)
-- [OpenAPI](https://developer.webex.com/docs/api/v1/openapi.json) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/cisco-control-hub.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/cisco-control-hub.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Portal](https://developer.webex.com)
-- [Console](https://admin.webex.com)
-- [Authentication](https://developer.webex.com/docs/getting-started#accounts-and-authentication)
-- [Rate Limits](https://developer.webex.com/docs/api-guidelines#rate-limiting)
-- [Status Page](https://status.webex.com)
-- [Support](https://developer.webex.com/support)
-- [Changelog](https://developer.webex.com/changelog)
-- [GitHub Organization](https://github.com/WebexSamples)
-- [Terms of Service](https://www.cisco.com/c/en/us/about/legal/cloud-and-software/end-user-license-agreement.html)
-- [Privacy Policy](https://www.cisco.com/c/en/us/about/legal/privacy-full.html)
-- [JSON-LD](json-ld/cisco-control-hub-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Spectral Rules](rules/cisco-control-hub-rules.yml) — [Spectral](https://docs.stoplight.io/docs/spectral)
-
-## Maintainers
-
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cisco-control-hub/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
